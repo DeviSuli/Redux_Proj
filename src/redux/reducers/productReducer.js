@@ -14,6 +14,9 @@ export const productReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case ActionTypes.SET_PRODUCTS:
       return state;
+    case ActionTypes.CLEAR_STATE:
+      console.log("dispatched");
+      return initialState;
     default:
       return state;
   }
